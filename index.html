@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/072f2fd706.js" crossorigin="anonymous"></script>
+    <title> アイドル YOASOBI </title>
+
+</head>
+<body>
+    <div id="wrapper">
+        <audio id="song" src="Idol (Oshi No Ko - Opening) - YOASOBI.mp3"></audio>
+        <div class="left">
+
+            <p class="name" id="name"> アイドル </p>
+            <p class="artist" id="artist"> YOASOBI </p>
+            <img id="image" src="a.jpg">
+            <input type="range" value="0" id="progress"> 
+            <div class="button">
+            <i class="fa-solid fa-play" id="play" onclick="playsong()"></i>
+            <i class="fa-solid fa-arrow-rotate-left" id="repeat" onclick="repeatsong()"></i>
+            <a id="download" href="Idol (Oshi No Ko - Opening) - YOASOBI.mp3" download><i class="fa-solid fa-download"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <p class="musiclist"> Lyrics </p>
+            <ul class = "songlyrics">
+                <p class="lyrics">Muteki no egao de arasu media
+Shiritai sono himitsu misuteriasu <br>
+Nuketeru toko sae kanojo no eria <br>
+Kanpeki de usotsuki na kimi wa <br>
+Tensai teki na aidoru sama <br>
+<br>
+(You're my savior, you're my saving grace) <br>
+<br>
+Kyou nani tabeta? <br>
+Suki na hon wa? <br>
+Asobi ni iku nara doko ni iku no? <br>
+Nanimo tabetenai <br>
+Sore wa naisho <br>
+Nani wo kikaretemo <br>
+Norari kurari <br>
+<br>
+Sou tantan to <br>
+Dakedo sansan to <br>
+Miesou de mienai himitsu wa mitsu no aji <br>
+Are mo nai nai nai <br>
+Kore mo nai nai nai <br>
+Suki na taipu wa? <br>
+Aite wa? <br>
+Saa kotaete <br>
+<br>
+"Dareka wo suki ni naru koto nante <br>
+Watashi wakaranakute sa" <br>
+Uso ka hontou ka shirienai <br>
+Sonna kotoba ni mata hitori ochiru <br>
+Mata suki ni saseru <br>
+<br>
+Daremo ga me wo ubawareteku <br>
+Kimi wa kanpeki de kyuukyoku no aidoru <br>
+Konrinzai arawarenai <br>
+Ichibanboshi no umarekawari <br>
+Sono egao de aishiteru tte <br>
+Daremo kare mo toriko ni shite iku <br>
+Sono hitomi ga sono kotoba ga uso demo <br>
+Sore wa kanzen na ai <br>
+<br>
+Hai hai ano ko wa tokubetsu desu <br>
+Wareware wa hana kara omakedesu <br>
+Ohoshi sama no hikitateyaku B desu <br>
+Subete ga ano ko no okagena wakenai <br>
+Sharakusai <br>
+Netami shitto nante nai wake ga nai <br>
+Kore wa netta janai <br>
+Karakoso yurusenai <br>
+Kanpeki janai kimi ja yurusenai <br>
+Jibun wo yurusenai <br>
+Dare yori mo tsuyoi kimi igai wa mitomenai <br>
+<br>
+Daremo ga shinji agameteru <br>
+Masani saikyou de muteki no aidoru <br>
+Jakuten nante miataranai <br>
+Ichibanboshi wo yadoshiteru <br>
+Yowai to konna tte misecha dame dame <br> 
+Shiritakunai toko wa misezu ni<br> 
+Yuiitsumu ni janakucha iya iya<br>
+Sorekoso honmono no ai <br>
+<br>
+Tokui no egao de wakasu media <br>
+Kakushikiru kono himitsu dake wa <br>
+Aishiteru tte uso de tsumukyaria <br>
+Korekoso watashi nari no aida <br>
+Nagareru ase mo kirei na akua <br> 
+Rubii wo kakushita kono mabuta <br> 
+Utai odori mau watashi wa Maria <br>
+Sou uso wa tobikiri no ai da <br>
+<br>
+Dareka ni aisareta koto mo <br>
+Dareka no koto aishita koto mo nai <br>
+Sonna watashi no uso ga itsuka hontou ni naru koto <br>
+Shinjiteru <br>
+ <br>
+Itsuka kitto zenbu te ni ireru <br>
+Watashi wa sou yokubarina aidoru <br>
+Toushindai de minna no koto <br>
+Chanto aishitai kara <br>
+Kyou mo uso wo tsuku no <br>
+Kono kotoba ga itsuka hontou ni naru hi wo negatte <br>
+Sore demo mada <br>
+Kimi to kimi ni dake ha iezu ni itakedo <br>
+<br>
+Ah, Yatto ieta <br>
+Kore wa zettai uso janai <br>
+Aishiteru <br>
+
+</p>
+<br>
+            </ul>
+
+        </div>
+    </div>
+<script>
+let repeat = document.getElementById("repeat");
+let song = document.getElementById("song");
+let button = document.getElementById("play");
+let progress = document.getElementById("progress");
+    
+song.onloadedmetadata = function() {
+progress.max = song.duration;
+progress.value = song.currentTime;
+
+}
+
+
+function playsong() {
+
+    if(button.classList.contains("fa-pause")) {
+        song.pause();
+        button.classList.remove("fa-pause");
+        button.classList.add("fa-play");
+    } else {
+        song.play();
+        button.classList.add("fa-pause");
+        button.classList.remove("fa-play");
+    }
+}
+
+if(song.play()){
+    setInterval(()=>{
+        progress.value = song.currentTime;
+    }, 500);
+}
+
+progress.onchange = function() {
+    song.play();
+    song.currentTime = progress.value;
+    button.classList.add("fa-pause");
+    button.classList.remove("fa-play");
+}
+
+function repeatsong() {
+    song.currentTime = 0;
+    song.play();
+    button.classList.add("fa-pause");
+    button.classList.remove("fa-play");
+}
+
+</script>
+
+
+</body>
+</html>
