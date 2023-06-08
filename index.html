@@ -144,7 +144,7 @@ let progress = document.getElementById("progress");
 song.onloadedmetadata = function() {
 progress.max = song.duration;
 progress.value = song.currentTime;
-
+song.pause();
 }
 
 
