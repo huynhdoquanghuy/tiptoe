@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://cdn.cbeditz.com/cbeditz/large/11614600401ft9fdv5famjm9cxhdwnyl0fcesfpbneenrzmdnxbfeufy4fkiiqyckhnhxkhrjnknwxm0lhlpitd5jjwjysgm4da0sjvuzmrevh2.jpg");
+    background-image: url("50183.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -128,7 +128,7 @@ p.lyrics {
 #progress {
     width: 60%;
     border-radius: 12px;
-    background: pink;
+    background: #212f47;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -139,7 +139,7 @@ p.lyrics {
 
 #progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: pink;
+    background: #212f47;
     width: 20px;
     height: 20px;
     border-radius: 50%;
